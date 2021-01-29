@@ -4,6 +4,7 @@ let third = document.querySelector(".Third");
 let fourth = document.querySelector(".Fourth"); 
 let fifth = document.querySelector(".Fifth"); 
 let button = document.querySelector("button");
+let label = document.querySelectorAll(".LabelAll");
 
 const key = "b2b2c61e0ec96a5c72a4b8acaf9a78bf";
 
@@ -24,3 +25,29 @@ function createWeather(obj) {
   console.log(obj);
 }
 
+let slider = document.querySelector('.slider');
+
+var flag = true;
+slider.onclick = function() {
+  if (flag == true) {
+    document.body.style.backgroundColor = "#000000";
+    button.style.backgroundColor = "white";
+    button.style.color = "black";
+    label[0].style.color = "white";
+    label[1].style.color = "white";
+    label[2].style.color = "white";
+    label[3].style.color = "white";
+    flag = false;
+}
+else {
+  document.body.style.backgroundColor = "#ffffff"
+  button.style.backgroundColor = "black";
+  button.style.color = "white";
+  label[0].style.color = "black";
+  label[1].style.color = "black";
+  label[2].style.color = "black";
+  label[3].style.color = "black";
+  flag = true;
+}
+  
+};
